@@ -139,7 +139,14 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
+    <ClCompile Include="installedProgramsAA.cpp" />
+    <ClCompile Include="installedProgramsClass.cpp" />
+    <ClCompile Include="storagePartitions.cpp" />
     <ClCompile Include="systemInformation.cpp" />
+  </ItemGroup>
+  <ItemGroup>
+    <ClInclude Include="installedProgramsClass.h" />
+    <ClInclude Include="storagePartitionsClass.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
   <ImportGroup Label="ExtensionTargets">
