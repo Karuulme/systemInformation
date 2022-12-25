@@ -5,15 +5,12 @@ using namespace std;
 int StringToWString(std::wstring& ws, const std::string& s)
 {
     std::wstring wsTmp(s.begin(), s.end());
-
     ws = wsTmp;
-
     return 0;
 }
 #define BUFFER 8192
 int main()
 {
-
     PVOID   pvData = {};
     LPDWORD pcbData = (LPDWORD)pvData;
     HKEY  regKey;   
@@ -61,7 +58,6 @@ int main()
         &ftLastWriteTime);
     DWORD   cbName;
     for (i = 0; i < cSubKeys; i++) {
-
         cbName = _MAX_PATH;
         retCode = RegEnumKeyEx(regKey, i,
             achKey,
@@ -80,20 +76,12 @@ int main()
             std::wstring name;
             StringToWString(name, path2);
             const wchar_t* szName = name.c_str();
-
-       
             char value[255];
             DWORD BufferSize = BUFFER;
             LSTATUS st = RegGetValueA(machine, path2.c_str() ,"DisplayName", RRF_RT_ANY, NULL, (PVOID)&value, &BufferSize);
             cout << i<<" "<< value << endl;
-           
-
         }
-
     }
     RegCloseKey(machine);
     RegCloseKey(regKey);
-
-
-
 }
