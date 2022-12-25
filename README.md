@@ -1,2 +1,2 @@
-# systemInformation
+
 KAYNAK:MSDN
