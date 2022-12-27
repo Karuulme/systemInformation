@@ -1,8 +1,5 @@
 #pragma once
-#include <iostream>
-#include <string>
-#include <Shlobj_core.h>
-using namespace std;
+#include "library.cpp"
 class installedProgramsClass
 {
 private:

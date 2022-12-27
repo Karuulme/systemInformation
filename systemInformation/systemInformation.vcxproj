@@ -139,13 +139,23 @@
     </Link>
   </ItemDefinitionGroup>
   <ItemGroup>
-    <ClCompile Include="installedProgramsAA.cpp" />
+    <ClCompile Include="displayListClass.cpp" />
     <ClCompile Include="installedProgramsClass.cpp" />
+    <ClCompile Include="kernelInfoClass.cpp" />
+    <ClCompile Include="keyboardAndLanguageClass.cpp" />
+    <ClCompile Include="library.cpp" />
+    <ClCompile Include="OSClass.cpp" />
+    <ClCompile Include="ramClass.cpp" />
     <ClCompile Include="storagePartitions.cpp" />
     <ClCompile Include="systemInformation.cpp" />
   </ItemGroup>
   <ItemGroup>
+    <ClInclude Include="displayListClass.h" />
     <ClInclude Include="installedProgramsClass.h" />
+    <ClInclude Include="kernelInfoClass.h" />
+    <ClInclude Include="keyboardAndLanguageClass.h" />
+    <ClInclude Include="OSClass.h" />
+    <ClInclude Include="ramClass.h" />
     <ClInclude Include="storagePartitionsClass.h" />
   </ItemGroup>
   <Import Project="$(VCTargetsPath)\Microsoft.Cpp.targets" />
