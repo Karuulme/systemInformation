@@ -147,7 +147,7 @@
     <ClCompile Include="OSClass.cpp" />
     <ClCompile Include="ramClass.cpp" />
     <ClCompile Include="storagePartitions.cpp" />
-    <ClCompile Include="systemInformation.cpp" />
+    <ClCompile Include="main.cpp" />
   </ItemGroup>
   <ItemGroup>
     <ClInclude Include="displayListClass.h" />
